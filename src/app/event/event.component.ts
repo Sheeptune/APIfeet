@@ -17,4 +17,8 @@ export class EventComponent implements OnInit {
   ngOnInit() {
   }
 
+getStatus(){
+  return this.eventStatus;
+}
+
 }

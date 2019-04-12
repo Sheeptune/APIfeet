@@ -6,9 +6,9 @@
       <mat-card-content>
         <mat-card-title>Title : {{ eventTitle }}</mat-card-title>
         <mat-card-subtitle>Date : {{ eventDate }} - Place : {{ eventPlace }}</mat-card-subtitle>
-        <p>{{eventStatus}}</p>
+        <p>{{getStatus()}}</p>
       <mat-card-actions>
-          <button mat-icon-button disabled>
+          <button mat-icon-button [disabled]="!isAuth">
             <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
           </button>
       </mat-card-actions>
